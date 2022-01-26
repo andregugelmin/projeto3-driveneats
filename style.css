@@ -4,6 +4,10 @@ font-family: 'Roboto', sans-serif; */
 	box-sizing: border-box;
 }
 
+body{
+    background-color: #E5E5E5;
+}
+
 header{
     background-color: #CF2B2B;
     width: 100vw;
@@ -12,7 +16,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header h1{
@@ -44,15 +48,21 @@ header h2{
     margin-bottom: 17px;
 }
 
+.caixas-pedido{
+    display: flex;
+    overflow-x: scroll;
+}
+
 .caixa-pedido{
     width: 172px;
     height: 216px;
-    box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 18px;
     background: #FFFFFF; 
+    margin-right: 16px;
 }
 
 .caixa-pedido img{
