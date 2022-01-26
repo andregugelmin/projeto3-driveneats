@@ -1,5 +1,8 @@
 /* font-family: 'Righteous', cursive;
 font-family: 'Roboto', sans-serif; */
+* {
+	box-sizing: border-box;
+}
 
 header{
     background-color: #CF2B2B;
@@ -12,7 +15,7 @@ header{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-h1{
+header h1{
     font-size: 44px;
     line-height: 55px;
     letter-spacing: -0.012em;
@@ -20,9 +23,58 @@ h1{
     font-family: 'Righteous', cursive
 }
 
-h2{
+header h2{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+.pedido{
+    margin-top: 27px;
+    margin-left: 19px;
+}
+
+.pedido h1{
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+.caixa-pedido{
+    width: 172px;
+    height: 216px;
+    box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 18px;
+    background: #FFFFFF; 
+}
+
+.caixa-pedido img{
+    width: 144px;
+    height: 87px;
+    margin-bottom: 8px;
+}
+
+.caixa-pedido h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.caixa-pedido p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;    
+    margin-top: 8px;    
+    margin-bottom: 8px;
 }
