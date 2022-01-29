@@ -6,12 +6,16 @@ let precoTotal = 0;
 let nomeComida;
 let nomeBebida;
 let nomeSobremesa;
+let Elemento;
 
 function selecionarItem(tipo, elemento, preco, nome){
+    Elemento = elemento;
     const selecionado = document.querySelector("." + tipo + " .item-selecionado");
     if(selecionado !== null){
-        selecionado.classList.remove("item-selecionado");
+        selecionado.classList.remove("item-selecionado");        
         qtdSelecionados -= 1;
+        selecionado.querySelector("ion-icon").classList.remove("icone-selecionado");
+        selecionado.querySelector("ion-icon").classList.add("desabilitado");
     }
 
     if(tipo === "comidas"){
@@ -28,7 +32,10 @@ function selecionarItem(tipo, elemento, preco, nome){
     }
 
     qtdSelecionados += 1;
-    elemento.classList.add("item-selecionado");    
+    elemento.classList.add("item-selecionado");  
+    const iconeElemento = elemento.querySelector("ion-icon");
+    iconeElemento.classList.remove("desabilitado");
+    iconeElemento.classList.add("icone-selecionado");
 
     if(qtdSelecionados >= 3){
         habilitarBotaoPedido();

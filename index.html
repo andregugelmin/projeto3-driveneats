@@ -15,37 +15,40 @@
 <body>
     <header>
         <h1>DrivenEats</h1>
-        <h2>Sua comida em 6 minutos</h2>
+        <h2>Sua comida em 6 minutos</h2>    
     </header>
 
     <div class="pedidos">
         <div class="pedido">
             <h1>Primeiro, seu prato</h1>
             <div class="caixas-pedido comidas">
-                <div class="caixa-pedido comida1" onclick="selecionarItem('comidas', this, 38.90, 'sushi')">
+                <div class="caixa-pedido" onclick="selecionarItem('comidas', this, 38.90, 'Combo de Sushi')">
                     <img src="imagens/sushizada.jpg"/>
                     <h3>Combo de sushi</h3>
                     <p>O nome é sushi mas vem sashimi também</p>
                     <h3>R$ 38,90</h3>
-                    <!-- <ion-icon id="check_frango_yin_yang" name="checkmark-circle"></ion-icon> -->
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido comida2" onclick="selecionarItem('comidas', this, 43.90, 'sushi')">
-                    <img src="imagens/sushizada.jpg"/>
-                    <h3>Combo de sushi</h3>
-                    <p>O nome é sushi mas vem sashimi também</p>
-                    <h3>R$ 43,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('comidas', this, 17.90, 'Temaki')">
+                    <img src="imagens/temaki.jpg"/>
+                    <h3>Temaki</h3>
+                    <p>Quem diria tanto peixe cru seria bom</p>
+                    <h3>R$ 17,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido comida3" onclick="selecionarItem('comidas', this, 29.90, 'sushi')">
-                    <img src="imagens/sushizada.jpg"/>
-                    <h3>Combo de sushi</h3>
-                    <p>O nome é sushi mas vem sashimi também</p>
+                <div class="caixa-pedido" onclick="selecionarItem('comidas', this, 29.90, 'Ramen')">
+                    <img src="imagens/ramen.jpg"/>
+                    <h3>Ramen</h3>
+                    <p>Aposto que assistiu Naruto e deu vontade</p>
                     <h3>R$ 29,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido comida4" onclick="selecionarItem('comidas', this, 34.90, 'sushi')">
-                    <img src="imagens/sushizada.jpg"/>
-                    <h3>Combo de sushi</h3>
-                    <p>O nome é sushi mas vem sashimi também</p>
-                    <h3>R$ 34,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('comidas', this, 24.90, 'Yakisoba')">
+                    <img src="imagens/yakisoba.jpg"/>
+                    <h3>Yakisoba</h3>
+                    <p>Diferente do que pensam, é japonês</p>
+                    <h3>R$ 24,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             
@@ -54,29 +57,33 @@
         <div class="pedido">
             <h1>Agora, sua bebida</h1>
             <div class="caixas-pedido bebidas">
-                <div class="caixa-pedido bebida1" onclick="selecionarItem('bebidas', this, 6.90, 'Coca Cola')">
+                <div class="caixa-pedido" onclick="selecionarItem('bebidas', this, 6.90, 'Coca Cola')">
                     <img src="imagens/coca-cola.jpg"/>
                     <h3>Coca Cola</h3>
                     <p>Nada melhor que uma Coquinha gelada</p>
                     <h3>R$ 6,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido bebida2" onclick="selecionarItem('bebidas', this, 6.90, 'Coca Cola')">
-                    <img src="imagens/coca-cola.jpg"/>
-                    <h3>Coca Cola</h3>
-                    <p>Nada melhor que uma Coquinha gelada</p>
-                    <h3>R$ 6,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('bebidas', this, 5.90, 'Pepsi')">
+                    <img src="imagens/pepsi.jpg"/>
+                    <h3>Pepsi</h3>
+                    <p>'Só tem pepsi, pode ser?'</p>
+                    <h3>R$ 5,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido bebida3" onclick="selecionarItem('bebidas', this, 6.90, 'Coca Cola')">
-                    <img src="imagens/coca-cola.jpg"/>
-                    <h3>Coca Cola</h3>
-                    <p>Nada melhor que uma Coquinha gelada</p>
-                    <h3>R$ 6,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('bebidas', this, 7.40, 'Ice Tea')">
+                    <img src="imagens/icetea.jpg"/>
+                    <h3>Ice Tea</h3>
+                    <p>Muito bom e refrescante</p>
+                    <h3>R$ 7,40</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido bebida4" onclick="selecionarItem('bebidas', this, 6.90, 'Coca Cola')">
-                    <img src="imagens/coca-cola.jpg"/>
-                    <h3>Coca Cola</h3>
-                    <p>Nada melhor que uma Coquinha gelada</p>
-                    <h3>R$ 6,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('bebidas', this, 8.90, 'Suco de laranja')">
+                    <img src="imagens/suco-laranja.jpg"/>
+                    <h3>Suco de laranja</h3>
+                    <p>Suco natural feito com frutas frescas</p>
+                    <h3>R$ 8,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             
@@ -85,29 +92,33 @@
         <div class="pedido">
             <h1>Por fim, sua sobremesa</h1>
             <div class="caixas-pedido sobremesas">
-                <div class="caixa-pedido sobremesa1" onclick="selecionarItem('sobremesas', this, 9.90, 'Manju')">
+                <div class="caixa-pedido" onclick="selecionarItem('sobremesas', this, 9.90, 'Manju')">
                     <img src="imagens/manju.jpg"/>
                     <h3>Porção de Manju</h3>
                     <p>É doce... Mas vai sal e feijão</p>
                     <h3>R$ 9,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido sobremesa2" onclick="selecionarItem('sobremesas', this, 9.90, 'Manju')">
-                    <img src="imagens/manju.jpg"/>
-                    <h3>Porção de Manju</h3>
-                    <p>É doce... Mas vai sal e feijão</p>
-                    <h3>R$ 9,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('sobremesas', this, 12.90, 'Dorayaki')">
+                    <img src="imagens/dorayaki.jpg"/>
+                    <h3>Dorayaki</h3>
+                    <p>Não se engane, também é de feijão</p>
+                    <h3>R$ 12,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido sobremesa3" onclick="selecionarItem('sobremesas', this, 9.90, 'Manju')"> 
-                    <img src="imagens/manju.jpg"/>
-                    <h3>Porção de Manju</h3>
-                    <p>É doce... Mas vai sal e feijão</p>
-                    <h3>R$ 9,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('sobremesas', this, 5.90, 'Castella')"> 
+                    <img src="imagens/Castella.jpg"/>
+                    <h3>Castella</h3>
+                    <p>Simples, mas muito gostoso</p>
+                    <h3>R$ 5,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="caixa-pedido sobremesa4" onclick="selecionarItem('sobremesas', this, 9.90, 'Manju')">
-                    <img src="imagens/manju.jpg"/>
-                    <h3>Porção de Manju</h3>
-                    <p>É doce... Mas vai sal e feijão</p>
-                    <h3>R$ 9,90</h3>
+                <div class="caixa-pedido" onclick="selecionarItem('sobremesas', this, 10.90, 'Furutsu Sando')">
+                    <img src="imagens/Furutsu-Sando.jpg"/>
+                    <h3>Furutsu Sando</h3>
+                    <p>É isso mesmo, pão com frutas</p>
+                    <h3>R$ 10,90</h3>
+                    <ion-icon class="check-icone desabilitado" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             
