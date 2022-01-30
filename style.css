@@ -167,3 +167,84 @@ header h2{
 .desabilitado{
     display: none;
 }
+
+.confirmacao-pedido{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.caixa-confirmacao{
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width: 90%;
+    height: 353px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.caixa-confirmacao h6{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.dados {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido-total p{ 
+    font-weight: bold;
+}
+
+.botao-confirmar{
+    background: #FFFFFF;
+    border-radius: 100px;
+    height: 12%;
+    padding-top: 1.8%;
+}
+
+.botao-confirmar p{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.018em;
+
+    color: #50D074;
+}
+
+.botao-cancelar p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+
+}
