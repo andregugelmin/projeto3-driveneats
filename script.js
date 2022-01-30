@@ -7,6 +7,8 @@ let nomeComida;
 let nomeBebida;
 let nomeSobremesa;
 let Elemento;
+let nomeCliente;
+let enderecoCliente;
 
 function selecionarItem(tipo, elemento, preco, nome){
     Elemento = elemento;
@@ -50,13 +52,37 @@ function habilitarBotaoPedido(){
     botaoClicavel.classList.remove("desabilitado");    
 }
 
+
 function fecharPedido() {
-    let mensagem;
+    nomeCliente = prompt("Qual seu nome?");
+    enderecoCliente = prompt("Qual seu endereço?");
 
     precoTotal = precoBebida + precoComida + precoSobremesa;
 
-    mensagem ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+nomeComida+"\n- Bebida:" + " "+nomeBebida+"\n- Sobremesa:" + " "+nomeSobremesa+ "\nTotal:" + " " + "R$" +" " + parseFloat(precoTotal).toFixed(2);
+    document.querySelector(".nome-comida").innerHTML = nomeComida;
+    document.querySelector(".preco-comida").innerHTML =precoComida.toFixed(2).toString().replace('.', ',');
+  
+    document.querySelector(".nome-bebida").innerHTML = nomeBebida;
+    document.querySelector(".preco-bebida").innerHTML = precoBebida.toFixed(2).toString().replace('.', ',');
+  
+    document.querySelector(".nome-sobremesa").innerHTML = nomeSobremesa;
+    document.querySelector(".preco-sobremesa").innerHTML = precoSobremesa.toFixed(2).toString().replace('.', ',');
+
+    document.querySelector(".preco-total").innerHTML = "R$" + precoTotal.toFixed(2).toString().replace('.', ',');
+  
+    document.querySelector(".confirmacao-pedido").classList.remove("desabilitado");
+
+}
+
+function cancelarPedido(){
+    const telaConfirmacao = document.querySelector(".confirmacao-pedido");
+    telaConfirmacao.classList.add("desabilitado");
+}
+
+function confirmarPedido(){
+    let mensagem;
+
+    mensagem ="Olá, gostaria de fazer o pedido:\n- Prato: " + nomeComida + "\n- Bebida: " + nomeBebida + "\n- Sobremesa: " + nomeSobremesa + "\nTotal: R$ " + parseFloat(precoTotal).toFixed(2) + "\n\nNome: " + nomeCliente + "\nEndereço: " + enderecoCliente;
     
     window.open("https://wa.me/5541920001323?text="+encodeURI(mensagem));
-    
 }

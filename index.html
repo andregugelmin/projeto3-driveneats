@@ -136,30 +136,30 @@
         </div>
     </div>
 
-    <div class="confirmacao-pedido">
+    <div class="confirmacao-pedido desabilitado">
         <div class="caixa-confirmacao">
             <h6>Confirme seu pedido</h6>
-            <div class="pedido-comida dados">
-               <p>Comida</p>
-               <p>00,00</p>
+            <div class="dados">
+               <p class="nome-comida">Comida</p>
+               <p class="preco-comida">00,00</p>
             </div>
             <div class="pedido-bebida dados">
-                <p>Bebida</p>
-                <p>00,00</p>
+                <p class="nome-bebida">Bebida</p>
+                <p class="preco-bebida">00,00</p>
              </div>
              <div class="pedido-sobremesa dados">
-                <p>Sobremesa</p>
-                <p>00,00</p>
+                <p class="nome-sobremesa">Sobremesa</p>
+                <p class="preco-sobremesa">00,00</p>
              </div>
              <div class="pedido-total dados">
                 <p>TOTAL</p>
-                <p>R$ 00,00</p>
+                <p class="preco-total">R$ 00,00</p>
              </div>
 
-             <div class="botao-confirmar">
+             <div class="botao-confirmar" onclick="confirmarPedido()">
                  <p>Tudo certo, pode pedir!</p> 
              </div>
-             <div class="botao-cancelar">
+             <div class="botao-cancelar" onclick="cancelarPedido()">
                  <p>Cancelar</p>
              </div>
         </div>
